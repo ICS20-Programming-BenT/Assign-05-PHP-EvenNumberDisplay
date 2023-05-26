@@ -1,0 +1,36 @@
+/* Created by: Ben Thomson
+* Created on: 05/12/2023
+* This CSS file defines the style for index.php
+* ICS2O-Unit5-03-PHP-Factorial
+*/
+
+body {
+  background-color: rgb(234 172 139);
+  font-weight: 900;
+  color: #355070;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: hsl(347deg 35% 55%);
+  padding: 40px;
+  text-align: center;
+}
+
+form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  background-color: #e56b6f;
+  padding: 20px;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  background-color: #e56b6f;
+  padding: 20px;
+}
+
+#result {
+  background-color: #e56b6f;
+}
