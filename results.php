@@ -4,15 +4,15 @@
 $numbers = "";
 $message = "";
 
-// Declaring constant to use later if the numbers to display in reverse
+// Gets result of which radio button to determine whether list of odd numbers should be reversed or not using "isset" (method taken from: https://www.simplilearn.com/tutorials/php-tutorial/isset-in-php)
 $reversed = isset($_POST['order']) && $_POST['order'] === 'reversed';
 
 
 // Getting the user input for the starting number and ending number
-$startNumber = intval($_POST["start-number"]);
-$endNumber = intval($_POST["end-number"]);
+$startNumber = $_POST["start-number"];
+$endNumber = $_POST["end-number"];
 
-// If the user does not enter either of the numbers, display that they must enter both numbers
+// If statement checks to verify that user input is valid using is_numeric (method from: https://www.w3schools.com/php/func_va r_is_numeric.asp)
 if ((!is_numeric($startNumber)) || (!is_numeric($endNumber))) {
     $message = "Please enter both a starting integer and an ending integer.";
 }
@@ -30,6 +30,8 @@ else {
 
         // Initializing the counter to the ending number
         $counter = $endNumber;
+
+        // Do..While loop that specifies that the code within the loop executes as long as the counter is greater than or equal to the starting number
         do {
 
             // If statement checks for the even numbers while loop runs(counter % 2 == 0 checks that remainder is 0, meaning that number is divisible by 2 (even number))
