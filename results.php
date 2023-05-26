@@ -43,31 +43,31 @@ else {
 
             // Creating the list of even numbers
             $message = "Here is a list of all the even numbers between " . $endNumber . " and " . $startNumber . ":<br><br>" . $numbers;
-    } while ($counter >= $startNumber);
-  }
-
-  // Otherwise, use a While loop to create the list of numbers
-  else {
-
-    // Initializing the counter to the starting number
-    $counter = $startNumber;
-
-    // While loop that specifies that the code within the loop executes as long as the counter is less than or equal to the ending number
-    while ($counter <= $endNumber) {
-
-      // If statement checks for the even numbers while loop runs(counter % 2 == 0 checks that remainder is 0, meaning that number is divisible by 2 (even number))
-      // Method taken from https://www.tutorialspoint.com/How-to-determine-if-a-number-is-odd-or-even-in-JavaScript
-      if ($counter % 2 == 0) {
-        $numbers = $numbers . $counter . "<br>";
-      }
-
-      // Increment the counter by 1 each time the loop executes
-      $counter = $counter + 1;
-
-      // Creating the list of even numbers
-      $message = "Here is a list of all the even numbers between " . $startNumber . " and " . $endNumber . ":<br><br>" . $numbers;
+        } while ($counter >= $startNumber);
     }
-  }
+
+    // Otherwise, use a While loop to create the list of numbers
+    else {
+
+        // Initializing the counter to the starting number
+        $counter = $startNumber;
+
+        // While loop that specifies that the code within the loop executes as long as the counter is less than or equal to the ending number
+        while ($counter <= $endNumber) {
+
+            // If statement checks for the even numbers while loop runs(counter % 2 == 0 checks that remainder is 0, meaning that number is divisible by 2 (even number))
+            // Method taken from https://www.tutorialspoint.com/How-to-determine-if-a-number-is-odd-or-even-in-JavaScript
+            if ($counter % 2 == 0) {
+                $numbers = $numbers . $counter . "<br>";
+            }
+
+            // Increment the counter by 1 each time the loop executes
+            $counter = $counter + 1;
+
+            // Creating the list of even numbers
+            $message = "Here is a list of all the even numbers between " . $startNumber . " and " . $endNumber . ":<br><br>" . $numbers;
+        }
+    }
 }
 
 // Displaying the range of even numbers back to the user
