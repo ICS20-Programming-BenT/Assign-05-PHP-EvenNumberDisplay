@@ -60,7 +60,7 @@
           <span class="mdl-radio__label">Yes</span>
         </label>
         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
-          <input class="mdl-radio__button" type="radio" name="order" value="not-reversed">
+          <input class="mdl-radio__button" type="radio" name="order" value="not-reversed" checked>
           <span class="mdl-radio__label">No</span>
         </label><br><br>
         <input type="submit" id="button" value="Submit Your Numbers!" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
